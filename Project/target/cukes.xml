@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="151.557" tests="13" skipped="0" failures="0" errors="0">
+<testcase classname="User could register with valid data" name="user Register successfully" time="15.158">
+<system-out><![CDATA[
+Given user go to registration page..........................................passed
+When user enter "Islam" and "Toba" and "islamtoba@gmail.com" and "170389" and "170389".passed
+And user clicks on register button..........................................passed
+Then user could register successfully.......................................passed
+And return to homepage......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could log in with valid email and password" name="user login successfully" time="10.643">
+<system-out><![CDATA[
+Given user navigates login page.............................................passed
+When user login with "islamtoba@gmail.com" and "170389".....................passed
+And user click on login button..............................................passed
+Then user could login successfully..........................................passed
+And redirected to homepage..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could log in with valid email and password" name="user couldn't login successfully" time="9.204">
+<system-out><![CDATA[
+Given user navigates login page.............................................passed
+When user login with "wrong@gmai.com" and "170389"..........................passed
+And user click on login button..............................................passed
+Then user could not login successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="switching between currencies US-Euro" name="Logged User could switch between currencies US-Euro" time="12.8">
+<system-out><![CDATA[
+Given user could logged by "islamtoba@gmail.com" and "170389"...............passed
+Given user writes Product name "Apple MacBook"..............................passed
+Given user click on search button...........................................passed
+Then the system change the system currency..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could search for any product" name="Logged User could search for any product" time="13.569">
+<system-out><![CDATA[
+Given user could login by "islamtoba@gmail.com" and "170389"................passed
+Given user writes Product name "apple"......................................passed
+When user click on search button............................................passed
+Then the system show related product that include "Apple"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="the Logged user could select any different Categories in the system" name="Logged user could select different Categories" time="14.478">
+<system-out><![CDATA[
+Given user could login by "islamtoba@gmail.com" and "170389"................passed
+When user can hover on computer category and selects sub category notebook..passed
+Then the system show all sub category products..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="The links on slider page should working" name="The links on slider page should working - Example #1.1" time="7.411">
+<system-out><![CDATA[
+Given User in home page and click on  "first"...............................passed
+Then user verify that "https://demo.nopcommerce.com/nokia-lumia-1020" for Slider correct.passed
+]]></system-out>
+</testcase>
+<testcase classname="The links on slider page should working" name="The links on slider page should working - Example #1.2" time="9.133">
+<system-out><![CDATA[
+Given User in home page and click on  "second"..............................passed
+Then user verify that "https://demo.nopcommerce.com/iphone-6" for Slider correct.passed
+]]></system-out>
+</testcase>
+<testcase classname="the User can follow us on different Social media" name="the Social media links should be working - Example #1.1" time="14.358">
+<system-out><![CDATA[
+Given User in home page and click on  "Facebook" Icon.......................passed
+Then user verify that "https://www.facebook.com/nopCommerce" for every social correct.passed
+]]></system-out>
+</testcase>
+<testcase classname="the User can follow us on different Social media" name="the Social media links should be working - Example #1.2" time="13.908">
+<system-out><![CDATA[
+Given User in home page and click on  "Twitter" Icon........................passed
+Then user verify that "https://twitter.com/nopCommerce" for every social correct.passed
+]]></system-out>
+</testcase>
+<testcase classname="the User can follow us on different Social media" name="the Social media links should be working - Example #1.3" time="14.166">
+<system-out><![CDATA[
+Given User in home page and click on  "Youtube" Icon........................passed
+Then user verify that "https://www.youtube.com/user/nopCommerce" for every social correct.passed
+]]></system-out>
+</testcase>
+<testcase classname="the User can follow us on different Social media" name="the Social media links should be working - Example #1.4" time="9.429">
+<system-out><![CDATA[
+Given User in home page and click on  "RSS" Icon............................passed
+Then user verify that "https://demo.nopcommerce.com/news/rss/1" for every social correct.passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to Wishlist" name="Logged user could add different products to Wishlist" time="7.066">
+<system-out><![CDATA[
+Given User in homepage and add product to his wishlist......................passed
+And the system show green success message...................................passed
+When user go to his Wishlist................................................passed
+Then The User find Product "HTC One M8 Android L 5.0 Lollipop" in the Wishlist.passed
+]]></system-out>
+</testcase>
+</testsuite>
